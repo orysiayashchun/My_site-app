@@ -5,8 +5,6 @@ gulp.task ('less',function(){
 	.pipe(less())
 	.pipe(gulp.dest('./project'));
 });
- gulp.task('watch', function(){
-	gulp.watch('project/**/*.less',['less']);
+ gulp.task('less:watch', function(){
+	gulp.watch('./project/**/*.less',['less']);
  });
-
-gulp.task('default', ['watch']);

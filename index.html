@@ -15,7 +15,7 @@
   <script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
-<script  src="scripts.js"></script>
+<!-- <script  src="scripts.js"></script> -->
 <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <!-- <script type="text/javascript"  src="script.js"></script> -->
 <title>Codebox</title>
@@ -159,7 +159,7 @@ notifications_none
             <div class="cont">
             <div class="item">
 
-            <div class="icon"></div><i class="material-icons" style="color:#c1daec">blur_circular</i>  <div class="text">Dushboard</div><div class="circle_1"><div class="t_1">2</div></div><div class="arrow"><i class="material-icons" style="color: #c1daec">keyboard_arrow_right</i></div><</div>
+            <div class="icon"></div><i class="material-icons" style="color:#c1daec">blur_circular</i>  <div class="text">Dushboard</div><div class="circle_1"><div class="t_1">2</div></div><div class="arrow"><i class="material-icons" style="color: #c1daec">keyboard_arrow_right</i></div></div>
             <div class="item">
             <div class="icon"></div><i class="material-icons"  style="color:#c1daec">insert_drive_file</i> <div class="text">  Mailbox</div></div>
             <div class="item">
@@ -454,7 +454,7 @@ notifications_none
      <div class="mdc-layuot-grid " style="width: 100%;
     margin-top: 58px;
     margin-left: 203px;
-    margin-right: 242px;
+    margin-right: 240px;
     font-size: 14pt;">
     <div class="mdc-layout-grid__inner__primary">
 
@@ -475,10 +475,15 @@ notifications_none
         <div class="brand"></div>
         <div class="revenue"></div> -->
         <div class="feedbacks"><div class="block_tx1">1349</div><div class="block_tx2 " style="  color: #7cd3e3; ">NEW FEEDBACKS</div></div>
+        <!-- <div class="img"><embed src="img/gh.svg"></div></div> -->
           <div class="total"><div class="block_tx1">$ 12,5 M</div><div class="block_tx2 " style="  color: #bfde9c;   ">TOTAL PROFIT</div></div>
+          <!-- <div class="img"><embed src="img/gh.svg"></div></div> -->
             <div class="orders"><div class="block_tx1">325</div><div class="block_tx2 " style="  color: #7cbbe3;   ">NEW OPDERS</div></div>
+            <!-- <div class="img"><embed src="img/gh.svg"></div></div> -->
               <div class="brand"><div class="block_tx1">+56%</div><div class="block_tx2 " style="  color: #cfacec;   ">BRAND POPULARITY</div></div>
+              <!-- <div class="img"><embed src="img/gh.svg"></div></div> -->
                 <div class="revenue"><div class="block_tx1">$12,500</div><div class="block_tx2 " style="  color: #ffffff;   ">REVENUE, 60% OF THE GOAL</div></div>
+                <!-- <div class="img"><embed src="img/gh.svg"></div></div> -->
         </div>
 
       </div>
@@ -491,13 +496,77 @@ notifications_none
 <div class="mdc-layout-grid__cell--span-5">
     <div class="mdc-layout-grid__inner" style=";height:425px; background:#fff;">
       <div class="mdc-layout-grid__cell--span-12">
+        <div class="mdc-layout-grid__inner" style=";height:70px; background:#fff;">
+          <div class="mdc-layout-grid__cell--span-4">
+
+              <div class="analysis">Analysis</div>
+
+          </div>
+            <div class="mdc-layout-grid__cell--span-4"></div>
+              <div class="mdc-layout-grid__cell--span-4">
+                <form name"1">
+                <select name="language" size="1"  style="margin-top: 20px;border-color:#fff; height:35px;width:100%;border-radius: 5px;
+       color:#555555; padding-left:15px; padding-right:15px;">
+                  <option select value="New" >Last 24 Hours
+                  <option select value="Next">Next
+                  <option select value="Next">Next
+                  <option select value="Next">Next
+                      </select>
+                </form>
+
+              </div>
+        </div>
+                <div class="mdc-layout-grid__inner" style=";height:355px; background:#fff;">
+<div class="mdc-layout-grid__cell--span-12">
+  <canvas id="myChart" width="500" height="300"></canvas>
+</div>
+
+                </div>
       <!-- <div id="donutchart"></div> -->
-      <canvas id="myChart"></canvas>
+      <!-- <canvas id="myChart"></canvas> -->
     </div>
     </div>
 </div>
 <div class="mdc-layout-grid__cell--span-7">
-    <div class="mdc-layout-grid__inner" style=";height:425px; background:#fff;"></div>
+  <div class="mdc-layout-grid__inner" style=";height:70px; background:#fff;">
+      <div class="mdc-layout-grid__cell--span-3">
+      <div class="analysis">Statistics</div>
+    </div>
+      <div class="mdc-layout-grid__cell--span-3"></div>
+            <div class="mdc-layout-grid__cell--span-2">
+              <div class="statistics_2">Week</div>
+            </div>
+              <div class="mdc-layout-grid__cell--span-2">
+                  <div class="statistics">Month</div>
+              </div>
+                <div class="mdc-layout-grid__cell--span-2">
+                 <div class="statistics">Year</div>
+                </div>
+  </div>
+    <div class="mdc-layout-grid__inner" style=";height:260px; background:#fff;">
+  <canvas id="myChart1" width="750" height="250"></canvas>
+</div>
+  <div class="mdc-layout-grid__inner" style=";height:95px; background:#fff;">
+  <div class="mdc-layout-grid__cell--span-3">
+    <p style="font-size:18pt; text-align:center;">3,438</p>
+    <p style="font-size:14pt; text-align:center; color:#b5b5b5">Orders</p>
+  </div>
+  <div class="mdc-layout-grid__cell--span-3">
+    <p style="font-size:18pt; text-align:center;">10,232</p>
+    <p style="font-size:14pt; text-align:center; color:#b5b5b5">Sellings</p>
+  </div>
+    <div class="mdc-layout-grid__cell--span-3">
+      <p style="font-size:18pt; text-align:center;">21,550</p>
+      <p style="font-size:14pt; text-align:center; color:#b5b5b5">Items</p>
+    </div>
+      <div class="mdc-layout-grid__cell--span-3">
+        <p style="font-size:18pt; text-align:center;">5,118</p>
+        <p style="font-size:14pt; text-align:center; color:#b5b5b5">Customers</p>
+      </div>
+
+
+</div>
+    <!-- </div> -->
 </div>
           </div>
           <div class="mdc-layout-grid__inner" style="margin-top:30px;height:475px;margin-left: 25px; margin-right: 25px;
@@ -541,7 +610,7 @@ notifications_none
 <div class="mdc-layout-grid__inner" style="height:420px;width:100%; background:#fff;">
     <div class="mdc-layout-grid__cell--span-12">
       <div class="inform">
-      <!--<div class="new_inf"></div>
+      <div class="new_inf"></div>
         <div class="new_inf_2">
           <div class="name_1">
             <div class="boll">
@@ -618,7 +687,7 @@ notifications_none
                     </div>
                </div>
              </div>
-        </div> -->
+        </div>
       </div>
     </div>
 </div>
@@ -659,10 +728,21 @@ notifications_none
       <div class="inform_4">
         <div style="color:#555555; margin-top:30px;" class="users" >
         <ul>
-                <div class="user"><div class="new_block" ><img class="im" src="img/members_1.png" alt="Альтернативный текст"></div><div class="nam"><div class="nam_1">Amelia Neison</div><div class="nam_2">UI Graphic</div></div></div>
-                    <div class="user"><div class="new_block"><img class="im" src="img/members_2.png" alt="Альтернативный текст"></div><div class="nam"><div class="nam_1">Alyssa Molligan</div><div class="nam_2">Art director, Movie Cut</div></div></div>
-                     <div class="user"><img class="im" src="img/members_3.png" alt="Альтернативный текст"><div class="nam"><div class="nam_1">Kaitlyn Eddington</div><div class="nam_2">Writter, Mag Editor</div></div></div>
-                  <div class="user"><div class="new_block"><img class="im" src="img/team2.png" alt="Альтернативный текст"></div><div class="nam"><div class="nam_1">Aaron Page</div><div class="nam_2">Designer, Bloger</div></div></div>
+                <div class="user"><div class="new_block" >
+                  <img class="im" src="img/members_1.png" alt="Альтернативный текст"></div>
+                  <div class="nam"><div class="nam_1">Louis Elliot 5 min ago</div>
+                <div class="nam_2">assign you a task Mockup Design</div></div></div>
+                    <div class="user"><div class="new_block">
+                      <img class="im" src="img/members_2.png" alt="Альтернативный текст"></div>
+                      <div class="nam"><div class="nam_1">Terry Moore 10 min ago</div>
+                      <div class="nam_2">Follow up to close deal</div></div></div>
+                     <div class="user"><img class="im" src="img/members_3.png" alt="Альтернативный текст">
+                       <div class="nam"><div class="nam_1">Walter Paler 1 hour ago</div>
+                       <div class="nam_2">was added to Repo</div></div></div>
+                  <div class="user"><div class="new_block">
+                    <img class="im" src="img/team2.png" alt="Альтернативный текст"></div>
+                    <div class="nam"><div class="nam_1">Mogen Polish 2 hour ago</div>
+                    <div class="nam_2">was added 5 photos to Admin Dashboard</div></div></div>
 
         </ul>
         </div>
@@ -703,8 +783,41 @@ notifications_none
 
 
 
-          <div class="mdc-layout-grid__inner" style="margin-top:30px;height:340px;margin-left: 25px; margin-right: 25px;background: #fff;
-          ">
+          <div class="mdc-layout-grid__inner" style="margin-top:30px;height:340px;margin-left: 25px; margin-right: 25px;background: #fff;">
+<div class="mdc-layout-grid__cell--span-9">
+<div class="mdc-layout-grid__inner" style="height:40px;background: #fff;color:#555555;padding-left:25px;">
+  <div class="mdc-layout-grid__cell--span-12"><p style="margin-top:10px;font-size:18px; font-weight:bold;">Managed Services</p></div>
+</div>
+<div class="mdc-layout-grid__inner" style="height:40px;background: #fff;color:#bdbdbd;font-size:14px;padding-left:25px;">
+  <div class="mdc-layout-grid__cell--span-12">Service report of this year (updated 1 hour ago)</div>
+</div>
+<div class="mdc-layout-grid__inner" style="height:260px;background: #fff;">
+  <div class="mdc-layout-grid__cell--span-12"></div>
+</div>
+</div>
+<div class="mdc-layout-grid__cell--span-3">
+  <div class="mdc-layout-grid__inner" style="height:40px;background: #e5eaeb;">
+    <div class="mdc-layout-grid__cell--span-12"><p style="margin-top:10px;font-size:18px; font-weight:bold;margin-left:20px;">Reports</p></div>
+  </div>
+  <div class="mdc-layout-grid__inner" style="height:300px;background: #e5eaeb;">
+    <div class="mdc-layout-grid__cell--span-12">
+<div class="mdc-layout-grid__inner" style="height:70px;background: #e5eaeb;">
+    <div class="mdc-layout-grid__cell--span-12">
+    </div>
+</div>
+ <div class="mdc-layout-grid__inner" style="height:70px; background: #e5eaeb;">
+   <div class="mdc-layout-grid__cell--span-12"></div>
+ </div>
+ <div class="mdc-layout-grid__inner" style="height:70px; background: #e5eaeb;">
+   <div class="mdc-layout-grid__cell--span-12"></div>
+ </div>
+ <div class="mdc-layout-grid__inner" style="height:90px;background: #e5eaeb;">
+   <div class="mdc-layout-grid__cell--span-12"></div>
+ </div>
+    </div>
+  </div>
+</div>
+
         </div>
 
 
@@ -825,7 +938,8 @@ notifications_none
             <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
             <span class="mdl-checkbox__label"></span>
           </label>
-        </div>  <div class="user" style="margin-top: 12px;"><div class="block" ><img class="im" src="img/cont_5.png" alt="Альтернативный текст"> </div><div class="nam"><div class="txt" style="margin-top:15px;color:#555;">Bailey Angell</div></div></div></div></div>
+        </div>  <div class="user" style="margin-top: 12px;"><div class="block" ><img class="im" src="img/cont_5.png" alt="Альтернативный текст"> </div><div class="nam"><div class="txt" style="margin-top:15px;color:#555;">Bailey Angell</div>
+      </div></div></div></div>
         <div class="col_2"><div class="content">Plan for team building activity QII </div></div>
         <div class="col_3"><div class="content_2">Jul 25, 2015</div></div>
         <div class="col_4"><div class="content"><div class="txt">Removed</div></div></div>
@@ -847,5 +961,8 @@ notifications_none
 
       </div>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="scripts.js"></script>
+<script src="script_3.js"></script>
         </body>
     </html>

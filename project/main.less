@@ -295,13 +295,14 @@ input::-webkit-input-placeholder{
   }
 #sidebar_2{
 position: fixed;
-width:240px;
+width:230px;
 height:100%;
 background:#ffffff;
+margin-right: 15px;
 right:0;
  margin-top: 58px;
  border-left: 2px solid #e1e1e1;
- border-top: 2px solid #e1e1e1;
+ border-top: 1px solid #e1e1e1;
 // z-index:;
 
 }
@@ -485,8 +486,9 @@ padding: 0;
     text-align: center;
       margin-top: 10px;
       overflow-x:hidden;
-
+justify-content: center;
 }
+
 .im{
   width: 32px;
   height: 32px;
@@ -1782,14 +1784,15 @@ padding: 0;
 
     .inform{
       // position: absolute;
-       background: #23649e;
+      // background: #23649e;
        width: 100%;
        height: 420px;
     //   height: 100%;
       //s margin-top: 50px;
         //width: 455px;
     //    height: 430px;
-      //  display: flex;
+      display: flex;
+      //position: absolute;
     .new_inf{
 
       width: 40px;
@@ -1798,15 +1801,16 @@ padding: 0;
       border-right: 1px solid #ececec;
     }
     .new_inf_2{
-      width: 415px;
+    //  width: 415px;
+    width: 100%;
       height: 430px;
       margin-left: -21px;
       overflow-x:hidden;
     //  margin-left: -30px;
       .name_1{
         position: relative;
-        width: 415px;
-        height:100px;
+        width: 100%;
+        height:90px;
 
         display: flex;
         .boll{
@@ -1829,7 +1833,7 @@ padding: 0;
         .photo{
           display: grid;
           grid-template-rows: 1fr 1fr;
-          width: 350px;
+          width: 100%;
           height:100px;
           margin-left: 50px;
           border-bottom: 1px solid #ececec;
@@ -1853,9 +1857,9 @@ padding: 0;
         }
       }
       .name_2{
-        position: absolute;
-        width: 415px;
-        height:100px;
+      //  position: absolute;
+        width: 100%;
+        height:90px;
         //border-bottom: 1px solid #ececec;
         //margin-top: 100px;
         display: flex;
@@ -1877,7 +1881,7 @@ padding: 0;
         .photo{
           display: grid;
           grid-template-rows: 1fr 1fr;
-          width: 350px;
+          width: 100%;
           height:100px;
           margin-left: 7px;
           border-bottom: 1px solid #ececec;
@@ -1901,10 +1905,10 @@ padding: 0;
         }
       }
       .name_3{
-        position: absolute;
-        width: 415px;
-        height:101px;
-        margin-top: 100px;
+       //position: absolute;
+        width: 100%;
+        height:90px;
+      //  margin-top: 100px;
         //border-bottom: 1px solid #ececec;
         display: flex;
         .boll{
@@ -1925,7 +1929,7 @@ padding: 0;
         .photo{
           display: grid;
           grid-template-rows: 1fr 1fr;
-          width: 350px;
+          width: 100%;
           height:100px;
           margin-left: 7px;
           border-bottom: 1px solid #ececec;
@@ -1949,10 +1953,10 @@ padding: 0;
         }
       }
       .name_4{
-        position: absolute;
-        width: 415px;
+      //  position: absolute;
+        width: 100%;
         height:130px;
-       margin-top: 200px;
+      // margin-top: 200px;
        display: flex;
        .boll{
          width: 42px;
@@ -2175,7 +2179,7 @@ height: 110px;
 display: grid;
 background: #fff;
 border-left: 1px solid #e1e1e1;
-grid-template-rows: 80px 550px 1685px;
+grid-template-rows: 82px 550px 1685px;
 
 .head{
 background:#ffffff;
@@ -2424,4 +2428,40 @@ padding-right: 20px;
 .bufferbar{
   background: #111a21;
 }
+}
+.analysis{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: #555555;
+}
+.statistics{
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555555;
+  margin-top: 25px;
+  font-size: 14px;
+}
+.statistics_2{
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555555;
+  margin-top: 25px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 1px solid #ebebeb;
+  cursor: pointer;
+
+}
+.statistics_2:hover{
+  background: #f9f9f9;
 }
